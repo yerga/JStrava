@@ -51,7 +51,7 @@ public class Activity {
     private float average_heartrate;
     private float max_heartrate;
     private float calories;
-    private int truncated;
+    private boolean truncated;
     private boolean has_kudoed;
     private List<SegmentEffort> segment_efforts;
     private List<SplitsMetric> splits_metric;
@@ -399,11 +399,11 @@ public class Activity {
         this.calories = calories;
     }
 
-    public int getTruncated() {
+    public boolean getTruncated() {
         return truncated;
     }
 
-    public void setTruncated(int truncated) {
+    public void setTruncated(boolean truncated) {
         this.truncated = truncated;
     }
 
